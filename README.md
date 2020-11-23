@@ -7,10 +7,10 @@ NDRquant is a method for quantification the content of circulating tumor DNA (ct
 # Usage
 The NDRquant workflow includes the following 2 steps:
 
-    1. Generating relative coverages of the predictive NDRs.
+1. Generating relative coverages of the predictive NDRs.
     
     
-    2. Estimating the ctDNA fractions. 
+2. Estimating the ctDNA fractions. 
     
 
 
