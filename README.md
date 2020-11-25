@@ -25,7 +25,5 @@ The NDRquant workflow includes the following 2 steps:
 2. Estimating the ctDNA fractions. 
     
 
-## Demo
-
 
 ## References
