@@ -24,7 +24,8 @@ The NDRquant workflow includes the following 2 steps:
 ![Alt text](https://github.com/skandlab/NDRquant/blob/main/relative%20coverage.jpg)
 
 #### 2. Estimating the ctDNA fractions. 
-    
+the
+![Alt text](https://github.com/skandlab/NDRquant/blob/main/model%20prediction.jpg)
 
 <p>&nbsp;</p>
 
