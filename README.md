@@ -9,7 +9,7 @@ We developed a quantitative method, exploiting local tissue-specific cell-free D
 ## Method Development
 At this stage, NDRquant was developed and benchmarked with whole genome sequencing (WGS) data of plasma samples from healthy donors, colorectal cancer (CRC) and breast cancer (BRCA) patients. The model could accurately predict ctDNA levels in CRC patients based on just 6 NDRs (3 CRC-specific and 3 blood-specific genes), and its robustness has been validated on capture-based sequencing data targeting the 6 NDRs using independent plasma samples from CRC patients. In addition, NDRquant could estimate ctDNA burden in plasma samples across distinct cancer types (CRC+BRCA) using 10 NDRs restricted to blood-specific genes. The data used for benchmarking the model is summarized below.
 
-| Cancer type  | No. of NDRs  | WGS data | targeted NDR sequencing data |
+| Cancer type  | No. of NDRs  | WGS data | Targeted NDR sequencing data |
 |:-------------:|:-------------:|:-----:|:-----:|
 | CRC      | 6  | CRC n=12, control n=29  | CRC n=53 |
 | multiple | 10 | CRC n=12, BRCA n=10, control n=29 | N/A currently |
