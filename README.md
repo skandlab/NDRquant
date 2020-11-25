@@ -19,6 +19,8 @@ The NDRquant workflow includes the following 2 steps:
 1. Generating relative coverages of the predictive NDRs.
 
    For a given promoter NDR (-150 to 50bp relative to TSS), the raw coverage was divided by the mean raw coverage of the upstream (-2000 to -1000bp relative to TSS) and downstream (1000 to 2000bp relative to TSS) flanks. A similar approach was used for the first exon-intron junction (NDR, -300 to -100 bp relative to first exon end). 
+![Alt text](relative/path/to/img.jpg?raw=true "Genomic regions over promoters (top) and first exon-intron junction (bottom) used to calculate relative
+coverage")
 
 2. Estimating the ctDNA fractions. 
     
