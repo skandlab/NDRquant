@@ -15,7 +15,7 @@ At this stage, NDRquant was developed and benchmarked with whole genome sequenci
 
 
 ## Usage
-####　The NDRquant workflow includes the following 2 steps:
+The NDRquant workflow includes the following 2 steps:
 
 #### 1. Generating relative coverages of the predictive NDRs.
 
