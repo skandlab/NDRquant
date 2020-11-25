@@ -10,7 +10,7 @@ At this stage, NDRquant was developed and benchmarked with whole genome sequenci
 | Cancer type  | No. of NDRs  | WGS data | targeted NDR sequencing data |
 |:-------------:|:-------------:|:-----:|:-----:|
 | CRC      | 6  | CRC n=12, control n=29  | CRC n=53 |
-| multiple | 10 | CRC n=12, BRCA n=10, control n=29 | N.A.|
+| multiple | 10 | CRC n=12, BRCA n=10, control n=29 | currently N.A.|
 
 
 ## Usage
