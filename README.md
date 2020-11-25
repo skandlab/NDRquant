@@ -15,14 +15,14 @@ At this stage, NDRquant was developed and benchmarked with whole genome sequenci
 
 
 ## Usage
-The NDRquant workflow includes the following 2 steps:
+####　The NDRquant workflow includes the following 2 steps:
 
-### 1. Generating relative coverages of the predictive NDRs.
+#### 1. Generating relative coverages of the predictive NDRs.
 
    For a given promoter NDR (-150 to 50bp relative to TSS), the raw coverage was divided by the mean raw coverage of the upstream (-2000 to -1000bp relative to TSS) and downstream (1000 to 2000bp relative to TSS) flanks. A similar approach was used for the first exon-intron junction (NDR, -300 to -100 bp relative to first exon end). The information of NDRs is provided ("6 NDRs - CRC.txt", "10 NDRs - multiple cancers.txt"), and the code for calculating the relative coverage of promoter/junction NDRs can be obtained ("generate-feature-promoter.sh", "generate-feature-junction.sh").
 ![Alt text](https://github.com/skandlab/NDRquant/blob/main/relative%20coverage.jpg)
 
-### 2. Estimating the ctDNA fractions. 
+#### 2. Estimating the ctDNA fractions. 
     
 
 
