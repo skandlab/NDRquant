@@ -8,7 +8,8 @@ We developed a quantitative method, exploiting local tissue-specific cell-free D
 The NDRquant workflow includes the following 2 steps:
 
 1. Generating relative coverages of the predictive NDRs.
-Read coverage at promoter and junction regions was computed from BAM files with SAMtools depth function. For the promoter region (-150 to 50 bp relative to TSS), the mean raw coverage across the region was divided (yielding “relative coverage”) by the mean coverage of the upstream (-2000~-1000 bp relative to TSS) and downstream (1000~2000 bp relative to TSS) flanks. A similar approach was used for the first exon-intron junction. 
+
+For a given promoter NDR (-150 to 50bp relative to TSS), the raw coverage was divided by the mean raw coverage of the upstream (-2000 to -1000bp relative to TSS) and downstream (1000 to 2000bp relative to TSS) flanks. A similar approach was used for the first exon-intron junction (NDR, -300 to -100 bp relative to first exon end). 
     
 2. Estimating the ctDNA fractions. 
     
