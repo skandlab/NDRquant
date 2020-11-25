@@ -23,7 +23,7 @@ For a given promoter NDR (-150 to 50bp relative to TSS), the raw coverage was di
 ![Alt text](https://github.com/skandlab/NDRquant/blob/main/relative%20coverage.jpg)
 
 #### 2. Estimating the ctDNA fractions. 
-The ctDNA fraction was estimated from the relative coverages of the predictive NDRs with linear regression using trained parameters ("model coefficients.xlsx").
+The ctDNA fraction was estimated from the relative coverages of the predictive NDRs with linear regression using the trained parameters ("model coefficients.xlsx").
 ![Alt text](https://github.com/skandlab/NDRquant/blob/main/model%20prediction.jpg)
 
 <p>&nbsp;</p>
