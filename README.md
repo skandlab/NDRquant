@@ -3,10 +3,7 @@ NDRquant is a method for quantification the content of circulating tumor DNA (ct
 <p>&nbsp;</p>
 
 ## Description
-NDRquant is a quantitative method for estimation of the ctDNA in plasma samples using local tissue-specific cell-free DNA degradation patterns. In blood plasma from cancer patients, nucleosome-dependent cfDNA degradation at promoters and first exon-intron junctions are strongly associated with differential transcriptional activity in tumors and blood. 
-
-XXX
-NDRquant A quantitative model, based on just 6 regulatory regions, could accurately predict ctDNA levels in colorectal cancer patients. Strikingly, a model restricted to blood-specific regulatory regions could predict ctDNA levels across both colorectal and breast cancer patients. Since the model requires data from 10 or less NDRs, these regions can be profiled at low cost by capturing <25 kb of genomic sequence, enabling quantitative low-cost tracking of ctDNA dynamics and disease progression.
+NDRquant is a quantitative method for estimation of ctDNA levels in plasma samples using local tissue-specific cell-free DNA degradation patterns. NDRquant-CRC is quantitative model, based on 6 regulatory regions, that can estimate ctDNA levels in blood plasma from colorectal cancer patients. NDRquant-PAN is a model pased on  10 regulatory regions that is able to estimate ctDNA levels in blood plasma from both breast cancer and colorectal cancer patients. Since the model requires data from 10 or less NDRs, these regions can be profiled at low cost by capturing <25 kb of genomic sequence, potentially enabling quantitative low-cost tracking of ctDNA dynamics and disease progression.
 <p>&nbsp;</p>
 
 ## Method Development
