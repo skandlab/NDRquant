@@ -9,10 +9,10 @@ NDRquant is a quantitative method for estimation of ctDNA levels in plasma sampl
 ## Method Development
 At this stage, NDRquant-CRC and NDRquant-PAN has been developed and benchmarked with whole genome sequencing (WGS) data of plasma samples from healthy donors, colorectal cancer (CRC) and breast cancer (BRCA) patients. The NDRquant-CRC model has been further validated using capture-based sequencing data targeting the 6 NDRs across >50 independent plasma samples from CRC patients. The data available for benchmarking of the models is summarized below.
 
-| Cancer type  | No. of NDRs  | WGS data | Targeted NDR sequencing data |
+| Model  | No. of NDRs  | WGS data (model development) | Capture data (validation) |
 |:-------------:|:-------------:|:-----:|:-----:|
-| CRC      | 6  | CRC n=12, control n=29  | CRC (n=53) |
-| multiple cancers | 10 | CRC n=12, BRCA n=10, control n=29 | N/A currently |
+| CRC      | 6  | CRC (n=12), Healthy (n=29)  | CRC (n=53); Healthy, N/A - in progress |
+| PAN (multiple cancers) | 10 | CRC (n=12), BRCA (n=10), Healthy (n=29) | N/A - in progress |
 <p>&nbsp;</p>
 
 ## Usage
