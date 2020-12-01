@@ -18,10 +18,18 @@ For a given promoter NDR (-150 to 50bp relative to TSS), the raw coverage is div
 #### example:
 For a given plasma sample, we first compute depth at NDR and flanking regions:
       
-      samtools depth -aa -r NDR.site in.bam > NDR.depth
-      samtools depth -aa -r Flanks.site in.bam > Flanks.depth
-
-XXX Show how we compute this table from the two depth files XXX
+      > samtools depth -aa -r NDR.site in.bam > NDR.depth
+      > samtools depth -aa -r Flanks.site in.bam > Flanks.depth
+      > cat NDR.depth
+      19 41082591 89
+      19 41082592 86
+      19 41082593 87
+      ...........
+      19 41082791 95
+      > mean_flanks=$(awk '{ total += $3 } END { print total/NR }' Flanks.depth)
+      > Relative_coverage_NDR=$(awk -v flanks=$mean_flanks '{if($3>2) print 2/flanks; else print $3/flanks}' NDR.depth | awk '{ total += $1 } END { print total/NR }')
+      > echo "Relative coverage is" $Relative_coverage_NDR
+      Relative coverage is 0.40
 
 |Gene	|     Transcript	|     Chr	|     Site	|Orientation|Region	|NDR.site	      |Flanks.site	      |Relative_coverage|
 |:--------:|:--------:|:-----:|:-----:|:---------:|:-----:|:-----:|:-----:|:-----:|
