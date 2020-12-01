@@ -37,7 +37,7 @@ The ctDNA fraction can be estimated from the relative coverages of the predictiv
 ![Alt text](https://github.com/skandlab/NDRquant/blob/main/Data/model%20prediction.jpg)
 
 #### examples:
-The ctDNA fraction can be estimated from the calculated relative coverages above using the trained parameters: fraction=sum(Coefficient*Relative_coverage)+Intercept=0.38.  
+The ctDNA fraction can be estimated from the calculated relative coverages above using the trained parameters: fraction=sum(Coefficient*Relative_coverage)+Intercept
 |Feature|	Gene|	Transcript|	Coefficient|Relative_coverage|
 |:--------:|:--------:|:-----:|:-----:|:---------:|
 |1|	SHKBP1	|ENST00000599716|	0.607	|0.40|
