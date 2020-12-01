@@ -15,21 +15,7 @@ The NDRquant workflow comprise the following 2 steps:
 For a given promoter NDR (-150 to 50bp relative to TSS), the raw coverage is divided by the mean raw coverage of the upstream (-2000 to -1000bp relative to TSS) and downstream (1000 to 2000bp relative to TSS) flanks. A similar approach was used for the first exon-intron junction (NDR, -300 to -100 bp relative to first exon end). The genomic locations of predictive NDRs for the NDRquant-CRC and NDRquant-Pan models are provided in the data folder. The code for calculating the relative coverage of promoter/junction NDRs is available in the code folder (scripts: "generate-feature-promoter.sh", "generate-feature-junction.sh").
 ![Alt text](https://github.com/skandlab/NDRquant/blob/main/Data/relative%20coverage.jpg)
 
-#### Example:
-For a givin plasma sample from CRC patients
-    samtools depth -aa -r $site sample.bam > examp.depth
 
-To calcuate the relative coverages of the predictive NDRs ("CRC_NDR.xls") for a givin plasma sample from CRC patient,
-| Gene  | Transcript  | Chr | Site | Coverage - NDR	| Coverage - flanks | Relative coverage |
-|:--------:|:--------:|:-----:|:-----:|:---------:|:-----:|:-----:|
-| SHKBP1 |ENST00000599716 |	19 | 41082891 |		| 	| |
-| ACSL1	 |ENST00000454703	| 4	| 185747070	| 	| 	| |
-| BCAR1	| ENST00000162330	| 16 | 75285369	| 	| 	| |
-| RAB25	| ENST00000361084	| 1	| 156030951	| 	| 	| |
-| PRTN3 |	ENST00000234347	| 19 |	840960	| 	| 	| |
-| LSR	  | ENST00000605618	| 19 | 35739922	| 	| 	| |
-
-<p>&nbsp;</p>
 
 ### 2. Estimating the ctDNA fractions. 
 The ctDNA fraction can be estimated from the relative coverages of the predictive NDRs with linear regression using the trained parameters (data/ folder, "model coefficients.xlsx").
