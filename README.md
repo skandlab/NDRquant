@@ -22,7 +22,7 @@ For a givin plasma sample from CRC patients, the 6 predictive NDRs ("CRC_NDR.xls
       samtools depth -aa -r Flanks.site in.bam > Flanks.depth
 
 
-|Gene	|     Transcript	|     Chr	|     Site	|Orientation|Region	|NDR.site	      |Flanks.site	      |Relative coverage|
+|Gene	|     Transcript	|     Chr	|     Site	|Orientation|Region	|NDR.site	      |Flanks.site	      |Relative_coverage|
 |:--------:|:--------:|:-----:|:-----:|:---------:|:-----:|:-----:|:-----:|:-----:|
 |SHKBP1|	ENST00000599716	|19|	41082891	|+	|junction|	19:41082591-41082791	|19:41080891-41081891 19:41083891-41084891	|0.40|
 |ACSL1|	ENST00000454703	|4 |	185747070	|-	|junction|	4:185747170-185747370	|4:185745070-185746070 4:185748070-185749070	|0.49|
@@ -37,8 +37,8 @@ The ctDNA fraction can be estimated from the relative coverages of the predictiv
 ![Alt text](https://github.com/skandlab/NDRquant/blob/main/Data/model%20prediction.jpg)
 
 #### examples:
-The ctDNA fraction can be estimated from the calculated relative coverages above:  
-|Feature|	Gene|	Transcript|	Coefficient|Relative coverage|
+The ctDNA fraction can be estimated from the calculated relative coverages above using the trained parameters: fraction=Sum(Coefficient*Relative_coverage)+Intercept=0.38.  
+|Feature|	Gene|	Transcript|	Coefficient|Relative_coverage|
 |:--------:|:--------:|:-----:|:-----:|:---------:|
 |1|	SHKBP1	|ENST00000599716|	0.607	|0.40|
 |2|	ACSL1	|ENST00000454703|	0.431	      |0.49|
@@ -46,6 +46,7 @@ The ctDNA fraction can be estimated from the calculated relative coverages above
 |4|	RAB25	|ENST00000361084|	-0.213	|0.85|
 |5|	PRTN3	|ENST00000234347|	0.062	      |1.01|
 |6|	LSR	|ENST00000605618|	-0.174	|0.84|
+|Intercept = 0.4368|
 
 <p>&nbsp;</p>
 
