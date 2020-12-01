@@ -20,14 +20,17 @@ For a givin plasma sample from CRC patients, the 6 predictive NDRs ("CRC_NDR.xls
       
       samtools depth -aa -r NDR.site in.bam > NDR.depth
       samtools depth -aa -r Flanks.site in.bam > Flanks.depth
-| Gene  | Transcript  | Chr | Site | NDR.site | Flanks.site | Relative coverage |
-|:--------:|:--------:|:-----:|:-----:|:---------:|:-----:|:-----:|
-| SHKBP1 |ENST00000599716 | 19 | 41082891 | | | |
-| ACSL1 |ENST00000454703 | 4 | 185747070 | | | |
-| BCAR1 | ENST00000162330 | 16 | 75285369 | | | |
-| RAB25 | ENST00000361084 | 1 | 156030951 | | | |
-| PRTN3 | ENST00000234347 | 19 | 840960 | | | |
-| LSR  | ENST00000605618 | 19 | 35739922 | | | |
+
+
+|Gene	|     Transcript	|     Chr	|     Site	|Orientation|Region	|NDR.site	      |Flanks.site	      |Relative coverage|
+|:--------:|:--------:|:-----:|:-----:|:---------:|:-----:|:-----:|:-----:|:-----:|
+|SHKBP1|	ENST00000599716	|19|	41082891	|+	|junction|	19:41082591-41082791	|19:41080891-41081891 19:41083891-41084891	|0.40|
+|ACSL1|	ENST00000454703	|4 |	185747070	|-	|junction|	4:185747170-185747370	|4:185745070-185746070 4:185748070-185749070	|0.49|
+|BCAR1|	ENST00000162330	|16|	75285369	|-	|junction|	16:75285469-75285669	|16:75283369-75284369 16:75286369-75287369	|0.78|
+|RAB25|	ENST00000361084	|1 |	156030951	|+	|promoter|	1:156030801-156031001	|1:156028951-156029951 1:156031951-156032951 	|0.85|
+|PRTN3|	ENST00000234347	|19|	840960	|+	|promoter|	19:840810-841010	      |19:838960-839960 19:841960-842960	      |1.01|
+|LSR|	ENST00000605618	      |19|	35739922	|+	|promoter|	19:35739772-35739972	|19:35737922-35738922 19:35740922-35741922    |0.84|
+
 
 ### 2. Estimating the ctDNA fractions. 
 The ctDNA fraction can be estimated from the relative coverages of the predictive NDRs with linear regression using the trained parameters (data/ folder, "model coefficients.xlsx").
@@ -35,6 +38,14 @@ The ctDNA fraction can be estimated from the relative coverages of the predictiv
 
 #### examples:
 The ctDNA fraction can be estimated from the calculated relative coverages above:  
+|Feature|	Gene|	Transcript|	Coefficient|Relative coverage|
+|:--------:|:--------:|:-----:|:-----:|:---------:|
+|1|	SHKBP1	|ENST00000599716|	0.607	|0.40|
+|2|	ACSL1	|ENST00000454703|	0.431	      |0.49|
+|3|	BCAR1	|ENST00000162330|	-0.321	|0.78|
+|4|	RAB25	|ENST00000361084|	-0.213	|0.85|
+|5|	PRTN3	|ENST00000234347|	0.062	      |1.01|
+|6|	LSR	|ENST00000605618|	-0.174	|0.84|
 
 <p>&nbsp;</p>
 
