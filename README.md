@@ -29,7 +29,5 @@ At this stage, NDRquant-CRC and NDRquant-PAN has been developed and benchmarked 
 <p>&nbsp;</p>
 
 ## Data Availability
+cfDNA sequencing data have been deposited at the European Genome-phenome Archive (EGA) under the accession code EGAS00001004657. The data is made available for academic research. 
 
-XXX Insert EGA Accession / link here XXX
-
-## References
