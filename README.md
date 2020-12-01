@@ -22,14 +22,14 @@ The ctDNA fraction can be estimated from the relative coverages of the predictiv
 <p>&nbsp;</p>
 
 ## Method Development
-At this stage, NDRquant-CRC and NDRquant-PAN has been developed and benchmarked with whole genome sequencing (WGS) data of plasma samples from healthy donors, colorectal cancer (CRC) and breast cancer (BRCA) patients. The NDRquant-CRC model has been further validated using capture-based sequencing data targeting the 6 NDRs across >50 independent plasma samples from CRC patients. The data available for benchmarking of the models is summarized below.
+At this stage, NDRquant-CRC and NDRquant-PAN has been developed and benchmarked with whole genome sequencing (WGS) data of plasma samples from healthy donors, colorectal cancer (CRC) and breast cancer (BRCA) patients. The NDRquant-CRC model has been further validated using capture-based sequencing data targeting the 6 NDRs across >50 independent plasma samples from CRC patients. The data used for development and benchmarking of the models is summarized below.
 
 | Model  | No. of NDRs  | WGS data (model development) | Capture data (validation) |
 |:-------------:|:-------------:|:-----:|:-----:|
-| CRC      | 6  | CRC (n=12), Healthy (n=29)  | CRC (n=53); Healthy, N/A - in progress |
+| CRC      | 6  | CRC (n=12), Healthy (n=29)  | CRC (n=53) |
 | PAN (multiple cancers) | 10 | CRC (n=12), BRCA (n=10), Healthy (n=29) | N/A - in progress |
 <p>&nbsp;</p>
 
 ## Data Availability
-https://ega-archive.org/studies/EGAS00001004657
+cfDNA sequencing data have been deposited at the European Genome-phenome Archive (EGA) under the accession code EGAS00001004657. The data is made available for academic research. 
 
