@@ -15,12 +15,13 @@ The NDRquant workflow comprise the following 2 steps:
 For a given promoter NDR (-150 to 50bp relative to TSS), the raw coverage is divided by the mean raw coverage of the upstream (-2000 to -1000bp relative to TSS) and downstream (1000 to 2000bp relative to TSS) flanks. A similar approach was used for the first exon-intron junction (NDR, -300 to -100 bp relative to first exon end). The genomic locations of predictive NDRs for the NDRquant-CRC and NDRquant-Pan models are provided in the data folder. The full code for calculating the relative coverage of promoter/junction NDRs is available in the code folder (scripts: "generate-feature-promoter.sh", "generate-feature-junction.sh").
 ![Alt text](https://github.com/skandlab/NDRquant/blob/main/Data/relative%20coverage.jpg)
 
-#### examples:
-For a givin plasma sample from CRC patients, the 6 predictive NDRs ("CRC_NDR.xls") comprises 3 promoter and 3 junction NDRs, and the raw coverages of their NDRs was divided by the mean raw coverage of the upstream and downstream flanks before the calculation of the mean relative coverage per NDR, shown below.
+#### example:
+For a given plasma sample, we first compute depth at NDR and flanking regions:
       
       samtools depth -aa -r NDR.site in.bam > NDR.depth
       samtools depth -aa -r Flanks.site in.bam > Flanks.depth
 
+XXX Show how we compute this table from the two depth files XXX
 
 |Gene	|     Transcript	|     Chr	|     Site	|Orientation|Region	|NDR.site	      |Flanks.site	      |Relative_coverage|
 |:--------:|:--------:|:-----:|:-----:|:---------:|:-----:|:-----:|:-----:|:-----:|
@@ -36,8 +37,11 @@ For a givin plasma sample from CRC patients, the 6 predictive NDRs ("CRC_NDR.xls
 The ctDNA fraction can be estimated from the relative coverages of the predictive NDRs with linear regression using the trained parameters (data/ folder, "model coefficients.xlsx").
 ![Alt text](https://github.com/skandlab/NDRquant/blob/main/Data/model%20prediction.jpg)
 
-#### examples:
-The ctDNA fraction can be estimated from the calculated relative coverages above using the trained parameters: fraction=sum(Coefficient*Relative_coverage)+Intercept
+#### example:
+The ctDNA fraction can be estimated from the calculated relative coverages above using the trained parameters: 
+
+fraction=sum(Coefficient*Relative_coverage)+Intercept
+
 |Feature|	Gene|	Transcript|	Coefficient|Relative_coverage|
 |:--------:|:--------:|:-----:|:-----:|:---------:|
 |1|	SHKBP1	|ENST00000599716|	0.607	|0.40|
