@@ -1,4 +1,4 @@
-# NDRquant (page under construction)
+# NDRquant
 NDRquant is a method for quantification the content of circulating tumor DNA (ctDNA) in plasma cell-free DNA (cfDNA) based on tissue-specific cfDNA degradation of nucleosome depleted regions (NDR).
 ### References:
 Zhu et al., Tissue-specific cell-free DNA degradation quantifies circulating tumor DNA burden, 2020 (in review).
