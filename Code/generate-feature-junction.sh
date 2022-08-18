@@ -1,5 +1,5 @@
 ##input files
-	#tss-2k: the regions for coverage calculation of junction NDRs; columns are transcript name, region, and gene direction
+	#tss-2k: the regions for coverage calculation of junction NDRs; columns are transcript name, region, and gene direction: e.g. transcript1 chr7:127225399-127231399 +
 	#sample.bam: the bam file of the sample
 ##output files
 	#score-NDR-cap2: mean coverage of the NDR, positions with relative coverage > 2 were truncated to reduce bias from potential outlier values
